@@ -63,9 +63,10 @@ main .first-part{
 }
 
 .first-part p a{
-    background-color: red;
-    margin-left: 25%;
-    margin-right: 25%;
+    background-color: rgb(204, 48, 48);
+    margin: 0, 10%, 0, 10%;
+    /* margin-left: 15%; 
+    margin-right: 15%;*/
     padding: 1rem;
     line-height: 0.5;
     font-size: 1rem;
@@ -76,10 +77,29 @@ main .first-part{
 
 .first-part .img1{
     height: 60pt;
-    margin-left: 90%;
+    margin-left: 75%;
 }
 
 .first-part .img2{
     height: 10%;
     transform: rotate(-50deg)
+}
+
+.second-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 16px;
+}
+
+.prod1 img, .prod2 img, .prod3 img{
+    height: 16rem;
+}
+
+.prod1, .prod2, .prod3{
+    border: 1px solid none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2px 16px;
+    transition: 0.3s;
+    width: 30%;
+    border-radius: 5px;
 }

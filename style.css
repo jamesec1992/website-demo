@@ -42,8 +42,12 @@ ul li{
 li a{
     text-decoration: none;
     color: gray;
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
     font-weight: 700;
+}
+
+li a:nth-child(1){ 
+    padding-right: 1rem;
 }
 
 li a:hover{
@@ -176,6 +180,24 @@ footer{
 .copy{
     padding: 1rem;
     text-align: center;
+    background-color: rgb(240, 234, 234);
+    color: rgb(78, 180, 78);
+}
+
+.about-us{
+    background-color: rgb(240, 234, 234);
+    padding: 5rem;
+    font-size: 1.2rem;
+    line-height: 2.5;
+    text-align: center;
+}
+
+
+.about-us h3{
+    text-align: center;
+    color: rgb(78, 180, 78);
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 767px){
@@ -210,18 +232,18 @@ footer{
    .prod1 img, .prod2 img, .prod3 img{
     width: 500px;
     padding-right: 10rem;
-}
+    }   
 
-.prod1, .prod2, .prod3{
+    .prod1, .prod2, .prod3{
     width: 100%; 
-}
+    }
 
-.serv .serv1-header{
+    .serv .serv1-header{
     display: none;
     visibility: hidden;  
-}
+    }
 
-footer .footer{
+    footer .footer{
     flex-direction: column;
-}
+    }
 }

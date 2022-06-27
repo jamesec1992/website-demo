@@ -146,7 +146,7 @@ main .first-part{
 .serv{
     background-image: url(assets/serv1.jpeg);
     background-repeat: no-repeat;
-    animation: slider 20s infinite;
+    animation: slider 10s infinite;
     background-size: cover;
     padding: 5rem;
 }
@@ -203,7 +203,7 @@ footer{
 
 .cont{
     background-color: rgb(240, 234, 234);
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .cont h3{
@@ -212,15 +212,14 @@ footer{
     font-weight: 700;
     font-size: 2rem;
 }
+
 /* contact us form */
 .form{
     padding: 32px;
     border: 1px solid rgb(78, 180, 78);
     border-radius: 7px;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    background-color: white;
-    
+    margin: inherit;
+    background-color: white; 
 }
 
 input[type=text], select, textarea {
@@ -247,15 +246,6 @@ input[type=text], select, textarea {
     color: black;
   }
   
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
-
-
-
 
 /* media query */
 
@@ -310,4 +300,20 @@ input[type=text], select, textarea {
         font-size: 1rem;
         line-height: 1.5;
     }
+
+    .cont{
+        padding: 0, 2rem;
+        margin-left: 0;
+    }
+
+    .form{
+        margin: inherit;   
+    }
 }
+
+@media only screen and (min-width: 767px){
+    .form{
+        margin: 7.2rem;
+    }
+}
+

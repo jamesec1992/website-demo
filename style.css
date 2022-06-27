@@ -19,8 +19,12 @@ header{
     justify-content: space-between;
 }
 
-header img{
+header a img{
     height: 50pt;
+}
+
+header a img:hover{
+    background-color: red;
 }
 
 nav ul{
@@ -31,12 +35,21 @@ nav ul{
 
 ul li{
     list-style: none;
+    padding-top: 0.3rem;
 }
+
 
 li a{
     text-decoration: none;
     color: gray;
-    top: 10rem;
+    padding-right: 5rem;
+    font-weight: 700;
+}
+
+li a:hover{
+    color: red;
+    transition: .3s linear;
+    /* cursor: pointer; */
 }
 
 main .first-part{
@@ -80,7 +93,7 @@ main .first-part{
 
 .first-part .img1{
     height: 60pt;
-    margin-left: 75%;
+    margin-left: 87%;
 }
 
 .first-part .img2{
@@ -90,7 +103,7 @@ main .first-part{
     border-radius: 10px;
 }
 
-.second-part{
+.second-part{ 
     display: flex;
     justify-content: space-between;
     padding: 2px 16px;
@@ -130,7 +143,7 @@ main .first-part{
     background-image: url(assets/serv1.jpeg);
     background-repeat: no-repeat;
     animation: slider 20s infinite;
-    background-size: 100%;
+    background-size: cover;
     padding: 5rem;
 }
 
@@ -142,12 +155,54 @@ main .first-part{
 }
 
 footer{
+    padding: 0;
+}
+
+.footer{
     display: flex;
     justify-content: space-between;
     background-color: rgb(78, 180, 78, 0.6);
     padding: 2rem;
 }
 
-footer .f3 img{
+.f1 h3, .f2 h3, .f3 h3{
+    color: white;
+}
+
+.footer .f3 img{
     height: 20pt;
+}
+
+.copy{
+    padding: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   .second-part{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .prod1 img, .prod2 img, .prod3 img{
+    width: 500px;
+    padding-right: 10rem;
+}
+
+.prod1, .prod2, .prod3{
+    width: 100%; 
+}
+
+.serv .serv1-header{
+    display: none;
+    visibility: hidden;  
+}
+
+footer .footer{
+    flex-direction: column;
 }

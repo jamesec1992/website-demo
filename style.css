@@ -25,6 +25,7 @@ header img{
 
 nav ul{
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -34,6 +35,8 @@ ul li{
 
 li a{
     text-decoration: none;
+    color: gray;
+    top: 10rem;
 }
 
 main .first-part{
@@ -82,7 +85,9 @@ main .first-part{
 
 .first-part .img2{
     height: 10%;
-    transform: rotate(-50deg)
+    /* transform: rotate(360deg); */
+    margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .second-part{
@@ -102,4 +107,47 @@ main .first-part{
     transition: 0.3s;
     width: 30%;
     border-radius: 5px;
+}
+
+.serv1 img{
+    height: 20rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.serv1-header{
+    width: 40%;
+    margin-top: 0.5rem;
+    margin-left: 50%;
+}
+
+.serv1-header h3{
+    color: rgb(78, 180, 78);
+    font-size: 2rem;
+}
+
+.serv{
+    background-image: url(assets/serv1.jpeg);
+    background-repeat: no-repeat;
+    animation: slider 20s infinite;
+    background-size: 100%;
+    padding: 5rem;
+}
+
+@keyframes slider{
+    0%{background-image: url(assets/serv1.jpeg);}
+    35%{background-image: url(assets/serv2.jpeg);}
+    75%{background-image: url(assets/serv3.jpeg);}
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(78, 180, 78, 0.6);
+    padding: 2rem;
+}
+
+footer .f3 img{
+    height: 20pt;
 }

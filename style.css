@@ -14,6 +14,7 @@ html,body{
     font-family: sans-serif;
 }
 
+/* index */
 header{ 
     display: flex;
     justify-content: space-between;
@@ -37,7 +38,6 @@ ul li{
     list-style: none;
     padding-top: 0.3rem;
 }
-
 
 li a{
     text-decoration: none;
@@ -184,6 +184,7 @@ footer{
     color: rgb(78, 180, 78);
 }
 
+/* about us */
 .about-us{
     background-color: rgb(240, 234, 234);
     padding: 5rem;
@@ -199,6 +200,64 @@ footer{
     font-weight: 700;
     font-size: 2rem;
 }
+
+.cont{
+    background-color: rgb(240, 234, 234);
+    padding: 3rem;
+}
+
+.cont h3{
+    color: rgb(78, 180, 78);
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+/* contact us form */
+.form{
+    padding: 32px;
+    border: 1px solid rgb(78, 180, 78);
+    border-radius: 7px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    background-color: white;
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(78, 180, 78);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .form button{
+    background-color: rgb(78, 180, 78);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color:  rgb(240, 234, 234);
+    color: black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+
+
+
+/* media query */
 
 @media only screen and (max-width: 767px){
     nav ul{
@@ -245,5 +304,10 @@ footer{
 
     footer .footer{
     flex-direction: column;
+    }
+
+    .about-us{
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }

@@ -184,6 +184,24 @@ footer{
         flex-wrap: wrap;
     }
 
+    .first-part .img1{
+        margin-left: 70%;
+    }
+
+    .first-part p{
+        font-size: 3rem;
+        padding-bottom: 0;
+        letter-spacing: -3px;
+    }
+
+    .first-part p span{
+        font-size: 2.2rem;
+    }
+
+    .first-part p a{
+        font-size: .6rem;
+    }
+
    .second-part{
     display: flex;
     flex-direction: column;
@@ -205,4 +223,5 @@ footer{
 
 footer .footer{
     flex-direction: column;
+}
 }
